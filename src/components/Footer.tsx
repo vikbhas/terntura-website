@@ -1,7 +1,11 @@
 
 import React from 'react';
+import { Button } from '@/components/ui/button';
+import { useNavigate } from 'react-router-dom';
+
 
 const Footer = () => {
+  const navigate = useNavigate();
   return (
     <footer className="bg-primary text-white py-12">
       <div className="max-w-6xl mx-auto px-4">
@@ -33,6 +37,14 @@ const Footer = () => {
         
         <div className="border-t border-white/20 pt-8 text-center text-white/60">
           <p>© 2025 TernTura Industrie GmbH. All rights reserved.</p>
+        </div>
+        <div className='text-right'>
+          <Button 
+         onClick={() => navigate('/datenschutz')}
+          size="icon" 
+            className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg font-semibold rounded-lg transition-all duration-300 hover:scale-105">
+            Daten Schutz
+          </Button>
         </div>
       </div>
     </footer>
