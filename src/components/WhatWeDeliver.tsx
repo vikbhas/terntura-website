@@ -63,7 +63,7 @@ const WhatWeDeliver = () => {
         
         <div className="text-center">
           <img 
-            src="../../public/assets/pexels-kateryna-babaieva-1423213-2965260.jpg" 
+            src="/assets/pexels-k.jpg" 
             alt="Industrial casting and assembly operations"
             className="w-full h-64 object-cover rounded-2xl shadow-xl"
           />

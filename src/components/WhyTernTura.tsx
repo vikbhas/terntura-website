@@ -61,7 +61,7 @@ const WhyTernTura = () => {
           
           <div>
             <img 
-              src="../../public/assets/pexels-cmrcn-29224552.jpg" 
+              src="/assets/pexels.jpg" 
               alt="QA + machining floor"
               className="w-full h-96 object-cover rounded-2xl shadow-xl"
             />

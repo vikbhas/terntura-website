@@ -64,7 +64,7 @@ const SystemFocusedOEMs = () => {
           
           <div>
             <img 
-              src="../../public/assets/anton-savinov-KeLUeVSplNY-unsplash.jpg" 
+              src="/assets/anton-savinov-KeLUeVSplNY-unsplash.jpg" 
               alt="Batch-ready parts and clean assembly operations"
               className="w-full h-96 object-cover rounded-2xl shadow-xl"
             />
