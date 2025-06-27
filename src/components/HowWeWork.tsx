@@ -64,7 +64,7 @@ const HowWeWork = () => {
         
         <div className="text-center">
           <img 
-            src="public/assets/thisisengineering-WDCE0T4khsE-unsplash.jpg" 
+            src="../../public/assets/thisisengineering-WDCE0T4khsE-unsplash.jpg" 
             alt="Machining operator at work"
             className="w-full h-96 object-cover rounded-2xl shadow-xl"
           />

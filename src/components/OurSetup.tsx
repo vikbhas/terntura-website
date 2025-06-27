@@ -54,7 +54,7 @@ const OurSetup = () => {
         
         <div className="text-center">
           <img 
-            src="public/assets/morteza-mohammadi-P8jEvckndSE-unsplash.jpg" 
+            src="../../public/assets/morteza-mohammadi-P8jEvckndSE-unsplash.jpg" 
             alt="Facility wide shot or casting in process"
             className="w-full h-80 object-cover rounded-2xl shadow-2xl"
           />

@@ -28,7 +28,7 @@ const Header = () => {
         
         <div className="mt-16">
           <img 
-            src="public/assets/1stpage.avif" 
+            src="../../public/assets/1stpage.avif" 
             alt="Industrial casting and machining operations"
             className="w-full h-64 object-cover rounded-2xl shadow-2xl"
           />
