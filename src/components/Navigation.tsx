@@ -52,12 +52,18 @@ const Navigation = () => {
           </div>
           
           <div className="hidden md:block">
+          <a 
+              href="https://docs.google.com/forms/d/e/1FAIpQLScRpe2w2t5XA8oqKpQde6HqdzdxIPwHSExN6F8nd0Qei_L9HQ/viewform?usp=header" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
             <Button 
               size="sm"
               className="bg-primary hover:bg-primary/90 text-white"
             >
-              Contact Us
+              Send Enquiry
             </Button>
+            </a>
           </div>
         </div>
       </div>

@@ -32,28 +32,31 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Global Reach</h4>
             <p className="text-white/80">Germany | Italy | Netherlands | Japan</p>
+            <div className="flex flex-col space-y-4 ml-4">
+            <Button 
+              onClick={() => navigate('/impressum')}
+              size="icon"
+              className="bg-primary hover:bg-primary/90 text-white px-8 pt-9 text-lg font-semibold rounded-lg transition-all duration-300 hover:scale-105"
+            >
+              Impressum
+            </Button>
+            <Button
+              onClick={() => navigate('/datenschutz')}
+              size="icon"
+              className="ml-2 bg-primary hover:bg-primary/90 text-white px-8 pt-0 text-lg font-semibold rounded-lg transition-all duration-300 hover:scale-105"
+            >
+              Datenschutz
+            </Button>
+  </div>
+        </div>
           </div>
         </div>
         
         <div className="border-t border-white/20 pt-8 text-center text-white/60">
           <p>© 2025 TernTura Industrie GmbH. All rights reserved.</p>
         </div>
-        <div className='text-right'>
-          <div className='mb-0'>
-          <Button 
-         onClick={() => navigate('/impressum')}
-          size="icon" 
-            className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg font-semibold rounded-lg transition-all duration-300 hover:scale-105">
-            Impressum
-          </Button>
-          </div>
-          <Button 
-         onClick={() => navigate('/datenschutz')}
-          size="icon" 
-            className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg font-semibold rounded-lg transition-all duration-300 hover:scale-105">
-            Daten Schutz
-          </Button>
-        </div>
+        <div >
+          
       </div>
     </footer>
   );

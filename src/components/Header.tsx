@@ -18,12 +18,16 @@ const Header = () => {
         </div>
         
         <div className="flex justify-center">
+        <a href="https://calendly.com/grk-ternturaindustrie/30min?hide_gdpr_banner=1" 
+        target="_blank" 
+        rel="noopener noreferrer" >
           <Button 
             size="lg" 
             className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg font-semibold rounded-lg transition-all duration-300 hover:scale-105"
           >
             Talk to Our Engineer
           </Button>
+          </a>
         </div>
         
         <div className="mt-16">

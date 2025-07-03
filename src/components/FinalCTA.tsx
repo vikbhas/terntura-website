@@ -16,6 +16,11 @@ const FinalCTA = () => {
         </div>
         
         <div className="flex justify-center">
+        <a 
+              href="https://docs.google.com/forms/d/e/1FAIpQLScRpe2w2t5XA8oqKpQde6HqdzdxIPwHSExN6F8nd0Qei_L9HQ/viewform?usp=header" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
           <Button 
             size="lg" 
             className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg font-semibold rounded-lg transition-all duration-300 hover:scale-105 group"
@@ -24,6 +29,7 @@ const FinalCTA = () => {
             {/* Send RFQ /  */}
             Send Enquiry
           </Button>
+          </a>
         </div>
       </div>
     </section>
