@@ -39,6 +39,14 @@ const Footer = () => {
           <p>© 2025 TernTura Industrie GmbH. All rights reserved.</p>
         </div>
         <div className='text-right'>
+          <div className='mb-0'>
+          <Button 
+         onClick={() => navigate('/impressum')}
+          size="icon" 
+            className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg font-semibold rounded-lg transition-all duration-300 hover:scale-105">
+            Impressum
+          </Button>
+          </div>
           <Button 
          onClick={() => navigate('/datenschutz')}
           size="icon" 
