@@ -26,8 +26,8 @@ const WhatWeDeliver = () => {
     },
     {
       icon: Box,
-      title: "Welded Assemblies",
-      description: "Structural welding"
+      title: "Forging Parts",
+      description: "Closed-die and custom forging"
     },
     {
       icon: Layers,
