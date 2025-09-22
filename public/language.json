@@ -1,10 +1,10 @@
 {
-    "en":{
+    "english":{
         "send_enquiry":"Send Enquiry",
-        "start_a_plot":"Start with a pilot."
+        "start_a_pilot":"Start with a pilot."
     },
-    "de":{
+    "deutsch":{
         "send_enquiry":"Anfrage senden",
-        "start_a_plot":"Beginnen Sie mit einem Piloten."
+        "start_a_pilot":"Beginnen Sie mit einem Piloten."
         }
     }

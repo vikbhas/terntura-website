@@ -1,34 +1,35 @@
 
 import React from 'react';
 import { FileText, Cog, RotateCcw, Factory, Truck } from 'lucide-react';
-
+import { useTranslation } from "react-i18next";
 const HowWeWork = () => {
+  const { t, i18n } = useTranslation();
   const steps = [
     {
       icon: FileText,
-      title: "Drawing & Design Review",
-      description: "Technical analysis and optimization"
+      title: t("work_step1_title"),
+      description: t("work_step1_sub"),
     },
     {
       icon: Cog,
-      title: "Prototype",
-      description: "Validation and testing"
+      title: t("work_step2_title"),
+      description: t("work_step2_sub"),
     },
     {
       icon: RotateCcw,
-      title: "Production Runs",
-      description: "Controlled production"
+      title: t("work_step3_title"),
+      description: t("work_step3_sub"),
     },
     {
       icon: Factory,
-      title: "In-process & Final QA",
-      description: "Full traceability"
+      title: t("work_step4_title"),
+      description: t("work_step4_sub"),
     },
     {
       icon: Truck,
-      title: "Export logistics coordinated from Munich",
-      description: "Project-led shipping & support"
-    }
+      title: t("work_step5_title"),
+      description: t("work_step5_sub"),
+    },
   ];
 
   return (
@@ -36,7 +37,7 @@ const HowWeWork = () => {
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8">
-            How we work.
+          {t("work_header")}
           </h2>
         </div>
         
@@ -58,7 +59,7 @@ const HowWeWork = () => {
         
         <div className="text-center mb-16">
           <p className="text-lg font-medium text-gray-700">
-            Each step managed with full traceability and drawing-based sign-off.
+            {t("work_note")}
           </p>
         </div>
         

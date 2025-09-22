@@ -2,16 +2,17 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Send } from 'lucide-react';
-
+import { useTranslation } from "react-i18next";
 const FinalCTA = () => {
+  const { t, i18n } = useTranslation();
   return (
     <section id="contact" className="py-24 bg-white">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8">
-            Start with a pilot.
+            {t("cta_title_line1")}
             <br />
-            Let's connect.
+            {t("cta_title_line2")}
           </h2>
         </div>
         
@@ -27,7 +28,7 @@ const FinalCTA = () => {
           >
             <Send className="w-5 h-5 mr-2 group-hover:translate-x-1 transition-transform duration-300" />
             {/* Send RFQ /  */}
-            Send Enquiry
+            {t("btn_send_enquiry")}
           </Button>
           </a>
         </div>

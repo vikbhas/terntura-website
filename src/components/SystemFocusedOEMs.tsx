@@ -1,29 +1,31 @@
 
 import React from 'react';
 import { FileCheck, TrendingUp, Recycle, Users } from 'lucide-react';
+import { useTranslation } from "react-i18next";
 
 const SystemFocusedOEMs = () => {
-  const requirements = [
+  const { t } = useTranslation();
+  const requirements =  [
     {
       icon: FileCheck,
-      title: "Structured delivery",
-      description: "with documentation"
+      title: t("teams_point1_bold"),
+      description: t("teams_point1_light"),
     },
     {
       icon: TrendingUp,
-      title: "Flexible production volumes",
-      description: "adaptable to your needs"
+      title: t("teams_point2_bold"),
+      description: t("teams_point2_light"),
     },
     {
       icon: Recycle,
-      title: "Support for engineering changes",
-      description: "across iterations"
+      title: t("teams_point3_bold"),
+      description: t("teams_point3_light"),
     },
     {
       icon: Users,
-      title: "Transparent and direct collaboration",
-      description: "Munich-led communication"
-    }
+      title: t("teams_point4_bold"),
+      description: t("teams_point4_light"),
+    },
   ];
 
   return (
@@ -31,14 +33,14 @@ const SystemFocusedOEMs = () => {
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8">
-            Built for system-focused teams.
+            {t("teams_title")}
           </h2>
         </div>
         
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <h3 className="text-2xl font-semibold text-gray-900 mb-8">
-              We work best with engineering teams who need:
+            {t("teams_intro")}
             </h3>
             
             <div className="space-y-6 mb-12">
@@ -57,7 +59,7 @@ const SystemFocusedOEMs = () => {
             
             <div className="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-primary">
               <p className="text-xl font-semibold text-gray-900">
-                We support your build from day one.
+              {t("teams_cta_banner")}
               </p>
             </div>
           </div>

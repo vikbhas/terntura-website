@@ -1,34 +1,35 @@
 
 import React from 'react';
 import { Building, Factory, Award, FlaskConical, Globe } from 'lucide-react';
-
+import { useTranslation } from "react-i18next";
 const OurSetup = () => {
+  const { t, i18n } = useTranslation();
   const features = [
     {
       icon: Building,
-      title: "60,000 sq.ft. owned facility",
-      subtitle: "Integrated manufacturing space"
+      title: t("infra_size_title"),
+      subtitle: t("infra_size_sub"),
     },
     {
       icon: Factory,
-      title: "Foundry and CNC machining under one roof",
-      subtitle: "End-to-end production"
+      title: t("infra_foundry_title"),
+      subtitle: t("infra_foundry_sub"),
     },
     {
       icon: Award,
-      title: "ISO 9001 Certified",
-      subtitle: "Quality management system"
+      title: t("infra_iso_title"),
+      subtitle: t("infra_iso_sub"),
     },
     {
       icon: FlaskConical,
-      title: "In-house QA inspection",
-      subtitle: "Testing capabilities"
+      title: t("infra_qa_title"),
+      subtitle: t("infra_qa_sub"),
     },
     {
       icon: Globe,
-      title: "Exporting to Germany, Italy, Netherlands, Japan",
-      subtitle: "Global experience"
-    }
+      title: t("infra_export_title"),
+      subtitle: t("infra_export_sub"),
+    },
   ];
 
   return (
@@ -36,7 +37,7 @@ const OurSetup = () => {
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-8">
-            Our infrastructure.
+            {t("infra_title")}
           </h2>
         </div>
         

@@ -1,39 +1,40 @@
 
 import React from 'react';
 import { Settings, Cpu, Wrench, Box, Layers, Factory } from 'lucide-react';
-
+import { useTranslation } from "react-i18next";
 const WhatWeDeliver = () => {
+  const { t, i18n } = useTranslation();
   const services = [
     {
       icon: Settings,
-      title: "Machined Components",
-      description: "Precision CNC machining"
+      title: t("deliver_machined_title"),
+      description: t("deliver_machined_sub"),
     },
     {
       icon: Factory,
-      title: "Iron Castings",
-      description: "Ductile and Grey Iron"
+      title: t("deliver_iron_title"),
+      description: t("deliver_iron_sub"),
     },
     {
       icon: Cpu,
-      title: "Aluminium Castings",
-      description: "Aluminium Components"
+      title: t("deliver_aluminium_title"),
+      description: t("deliver_aluminium_sub"),
     },
     {
       icon: Wrench,
-      title: "Sheet Metal Parts",
-      description: "Custom fabrication"
+      title: t("deliver_sheet_title"),
+      description: t("deliver_sheet_sub"),
     },
     {
       icon: Box,
-      title: "Forging Parts",
-      description: "Closed-die and custom forging"
+      title: t("deliver_forging_title"),
+      description: t("deliver_forging_sub"),
     },
     {
       icon: Layers,
-      title: "Sub-Assemblies",
-      description: "Integrated builds"
-    }
+      title: t("deliver_subassy_title"),
+      description: t("deliver_subassy_sub"),
+    },
   ];
 
   return (
@@ -41,7 +42,7 @@ const WhatWeDeliver = () => {
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8">
-            What we deliver.
+            {t("deliver_title")}
           </h2>
         </div>
         

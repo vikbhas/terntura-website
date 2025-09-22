@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Datenschutz from './pages/Datenschutz';
 import Impressum from './pages/Impressum';
+import "./i8n";
 
 const queryClient = new QueryClient();
 
