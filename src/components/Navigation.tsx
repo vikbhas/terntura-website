@@ -55,22 +55,21 @@ const Navigation = () => {
           
           <div className="hidden md:flex items-center space-x-4">
             {/* Language Switcher */}
-            <div className="flex space-x-2">
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={() => i18n.changeLanguage("en")}
-              >
-                EN
-              </Button>
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={() => i18n.changeLanguage("de")}
-              >
-                DE
-              </Button>
-            </div>
+            <div className="flex items-center space-x-2">
+  <button
+    onClick={() => i18n.changeLanguage("en")}
+    className={`text-gray-700 hover:text-primary font-medium underline ${i18n.language === 'en' ? 'underline' : 'no-underline'}`}
+  >
+    EN
+  </button>
+  <span className="text-gray-400">|</span>
+  <button
+    onClick={() => i18n.changeLanguage("de")}
+    className={`text-gray-700 hover:text-primary font-medium underline ${i18n.language === 'de' ? 'underline' : 'no-underline'}`}
+  >
+    DE
+  </button>
+</div>
           <a 
               href="https://docs.google.com/forms/d/e/1FAIpQLScRpe2w2t5XA8oqKpQde6HqdzdxIPwHSExN6F8nd0Qei_L9HQ/viewform?usp=header" 
               target="_blank" 
