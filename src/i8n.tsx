@@ -16,6 +16,7 @@ i18n
   .use(initReactI18next) // bind react-i18next
   .init({
     fallbackLng: "de",
+    lng: "de",
     debug: false,
     interpolation: {
       escapeValue: false, // React already escapes by default
