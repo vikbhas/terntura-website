@@ -58,14 +58,14 @@ const Navigation = () => {
             <div className="flex items-center space-x-2">
   <button
     onClick={() => i18n.changeLanguage("de")}
-    className={`text-gray-700 hover:text-primary font-medium underline ${i18n.language === 'en' ? 'underline' : 'no-underline'}`}
+    className={`text-gray-700 hover:text-primary font-medium underline ${i18n.language === 'de' ? 'underline' : 'no-underline'}`}
   >
     DE
   </button>
   <span className="text-gray-400">|</span>
   <button
     onClick={() => i18n.changeLanguage("en")}
-    className={`text-gray-700 hover:text-primary font-medium underline ${i18n.language === 'de' ? 'underline' : 'no-underline'}`}
+    className={`text-gray-700 hover:text-primary font-medium underline ${i18n.language === 'en' ? 'underline' : 'no-underline'}`}
   >
     EN
   </button>
