@@ -15,7 +15,7 @@ i18n
   .use(LanguageDetector) // auto-detect browser language
   .use(initReactI18next) // bind react-i18next
   .init({
-    fallbackLng: "en",
+    fallbackLng: "de",
     debug: false,
     interpolation: {
       escapeValue: false, // React already escapes by default
